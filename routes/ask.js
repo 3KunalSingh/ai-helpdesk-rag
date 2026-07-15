@@ -6,7 +6,7 @@ const { findRelevantDocuments } = require('../services/vectorSearch');
 const { generateAnswer } = require('../services/llmService');
 
 // Confidence threshold — lowered to 0.65 for better accuracy
-const CONFIDENCE_THRESHOLD = 0.65;
+const CONFIDENCE_THRESHOLD = 0.50;
 
 // POST /ask - Process a user query using RAG
 router.post('/', async (req, res) => {
